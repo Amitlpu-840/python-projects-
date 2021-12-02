@@ -31,10 +31,10 @@ def computer_guess(x):
     temp = 0
     feedback = ""
     print(f"guessing the number between {low} and {high} ")
-    while feedback != "y" and low != high:
+    while feedback != "c" and low != high:
         g = random.randint(low, high)
         feedback = input(
-            f"is {g} a high guess or a low guess or a correct guess?(h/l/y)"
+            f"is {g} a high guess (h) or a low guess (l) or a correct guess (c)?)"
         )
         if feedback == "h":
             high = g - 1
